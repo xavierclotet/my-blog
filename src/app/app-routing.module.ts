@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'articles', loadChildren: () => import('./articles/articles.module').then(m => m.ArticlesModule) },
   { path: '', redirectTo: 'articles', pathMatch: 'full' },
   { path: 'posts', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule) },
+  { path: 'test', loadChildren: () => import('./test/test.module').then(m => m.TestModule) },
   { path: '**', redirectTo: 'articles' }
 ];
 
